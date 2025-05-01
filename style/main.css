@@ -1,10 +1,12 @@
 html {
   box-sizing: border-box;
+  background-color: #e0f7ff; /* Light blue background */
 }
 
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
+  color: #003366; /* Dark blue text for contrast */
 }
 
 .song {
@@ -30,24 +32,28 @@ body {
 
 .one {
   font-size: 4.5rem;
+  color: #0066cc;
 }
 
 .two {
   font-size: 1.2rem;
   font-weight: lighter;
+  color: #3399cc;
 }
 
 .three {
   font-size: 3rem;
+  color: #003366;
 }
 
 .four .text-box {
-  border: 3px solid #aaa;
+  border: 3px solid #88cfff;
   border-radius: 5px;
   margin: 0 auto;
   padding: 10px;
   position: relative;
   width: 600px;
+  background-color: #f0fbff;
 }
 
 .text-box p {
@@ -60,7 +66,7 @@ body {
 }
 
 .text-box .fake-btn {
-  background-color: rgb(21, 161, 237);
+  background-color: #4da6ff;
   border-radius: 3px;
   bottom: -50px;
   color: #fff;
@@ -80,20 +86,23 @@ body {
   border-radius: 3px;
   display: inline-block;
   padding: 3px 5px;
+  background-color: #cceeff;
+  color: #003366;
 }
 
 .five .idea-5 {
   font-size: 4rem;
+  color: #005c99;
 }
 
 .idea-5 span, .idea-6 span, .wish-hbd span {
   display: inline-block;
 }
 
-.idea-6 span{
+.idea-6 span {
   font-size: 15rem;
+  color: #007acc;
 }
-
 
 .six {
   position: relative;
@@ -105,13 +114,11 @@ body {
   display: inline-block;
   height: 350px;
   max-width: 100%;
-  /* height: auto; */
 }
 
 .six .hat {
   left: 41.5%;
   position: absolute;
-  /* transform: scale(0.1); */
   top: -35%;
   width: 80px;
 }
@@ -149,56 +156,57 @@ body {
   z-index: -1;
 }
 
+/* Light blue theme for SVG confetti */
 .eight svg:nth-child(1) {
-  fill: #bd6ecf;
+  fill: #a3d1ff;
   left: 5vw;
   top: 7vh;
 }
 
 .eight svg:nth-child(2) {
-  fill: #7dd175;
+  fill: #7dd3fc;
   left: 35vw;
   top: 23vh;
 }
 
 .eight svg:nth-child(3) {
-  fill: #349d8b;
+  fill: #66ccff;
   left: 23vw;
   top: 33vh;
 }
 
 .eight svg:nth-child(4) {
-  fill: #347a9d;
+  fill: #3399cc;
   left: 57vw;
   top: 43vh;
 }
 
 .eight svg:nth-child(5) {
-  fill: #c66053;
+  fill: #66b2ff;
   left: 7vw;
   top: 68vh;
 }
 
 .eight svg:nth-child(6) {
-  fill: #bfaa40;
+  fill: #b3e0ff;
   left: 77vw;
   top: 42vh;
 }
 
 .eight svg:nth-child(7) {
-  fill: #e3bae8;
+  fill: #99ccff;
   left: 83vw;
   top: 68vh;
 }
 
 .eight svg:nth-child(8) {
-  fill: #8762cb;
+  fill: #80bfff;
   left: 37vw;
   top: 86vh;
 }
 
 .eight svg:nth-child(9) {
-  fill: #9a90da;
+  fill: #cce6ff;
   left: 87vw;
   top: 94vh;
 }
@@ -207,17 +215,20 @@ body {
   font-size: 3em;
   margin: 0;
   text-transform: uppercase;
+  color: #003366;
 }
 
 .wish h5 {
   font-size: 2rem;
   font-weight: lighter;
   margin: 10px 0 0;
+  color: #3399cc;
 }
 
 .nine p {
   font-size: 2rem;
   font-weight: lighter;
+  color: #003366;
 }
 
 #replay {
@@ -273,7 +284,6 @@ body {
   }
 
   .six .hat {
-    /* top: -20px; */
     width: 50px;
   }
 
@@ -288,5 +298,34 @@ body {
   .nine p {
     font-size: 1.5rem;
     font-weight: lighter;
+  }
+}
+/* Style for profile picture */
+.profile-picture {
+  border: 5px solid #66ccff; /* Light blue border */
+  border-radius: 50%;        /* Make it circular */
+  box-shadow: 0 0 20px rgba(102, 204, 255, 0.6);
+  animation: pulse 2s infinite ease-in-out;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect (optional) */
+.profile-picture:hover {
+  transform: scale(1.05);
+}
+
+/* Animation keyframes */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(102, 204, 255, 0.6);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(102, 204, 255, 0.8);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(102, 204, 255, 0.6);
   }
 }
